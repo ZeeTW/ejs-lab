@@ -7,7 +7,7 @@
   </head>
   <body>
     <%- include('./partials/nav') %>
-    <h1><%= category%>Menu</h1>
+    <h1><%= category%> menu</h1>
 
     <% if(menuItems.length === 0){%>
     <p>no items</p>
@@ -18,7 +18,8 @@
 
       <li>
         <h2><%= item.name %></h2>
-        Price: $<%= item.price %> Rating: <%= item.rating %> <%= item.details %>
+        Price: $<%= item.price %><br />
+        Rating: <%= item.rating %> <br /><%= item.details %>
       </li>
       <% }) %>
     </ul>
